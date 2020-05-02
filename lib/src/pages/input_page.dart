@@ -145,7 +145,6 @@ class _InputPageState extends State<InputPage> {
     }
 
     Widget _crearPassword(){
-
       return TextField(
        // autofocus: true,
        obscureText: true,
@@ -153,7 +152,7 @@ class _InputPageState extends State<InputPage> {
          border: OutlineInputBorder(
            borderRadius: BorderRadius.circular(20.0)
          ),
-        counter: Text('Letras ${_nombre.length}'),
+        counter: Text('Letras ${_password.length}'),
         hintText: 'Password',
         labelText: 'password',
         suffixIcon:  Icon(Icons.lock_open),
