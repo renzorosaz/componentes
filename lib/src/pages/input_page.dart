@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
@@ -13,6 +12,7 @@ class _InputPageState extends State<InputPage> {
   String _nombre='';
   String _email='';
   String _fecha='';
+  String _password='';
 
   String  _opcionSeleccionada= 'Volar';
   List<String> _poderes= ['Volar','Rayos X', 'Super Aliento', 'Super fuerza'];
@@ -108,10 +108,7 @@ class _InputPageState extends State<InputPage> {
 
       ],
     );
-    
-    
-    
-     
+
   }
 
     Widget _crearPersona(){
@@ -164,7 +161,7 @@ class _InputPageState extends State<InputPage> {
        ),
 
         onChanged: (valor)=>setState(() {
-               _email=valor;
+               _password=valor;
             })
 
       );
